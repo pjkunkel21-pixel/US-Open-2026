@@ -239,7 +239,7 @@ const NAME_ALIASES = {
 };
 
 // Default published-CSV URL (this pool's Google Form responses sheet)
-const DEFAULT_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRqFskrPbaPm1GnMu1LYUSZfUv68Uypg7vaVbRquXpPUfZRzq9KgOpOVEGiBWXTnZtBYTXpBcBOhaX9/pub?output=csv';
+const DEFAULT_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRqFskrPbaPm1GnMu1LYUSZfUv68Uypg7vaVbRquXpPUfZRzq9KgOpOVEGiBWXTnZtBYTXpBcBOhaX9/pub?gid=1609619298&single=true&output=csv';
 
 // Column mapping. This pool's sheet is a Google Form export:
 //   Timestamp, Name, Column 2   — where "Column 2" is ONE cell holding all 6 golfers,
@@ -251,7 +251,7 @@ let COLS = { name:'Name', owner:'', golfersCell:'Column 2', golfers:['Golfer 1',
 // on first load without needing a sync. Click "Sync from Sheet" anytime to refresh from
 // the live Google Sheet (e.g. if someone edits their picks).
 const DEFAULT_ENTRIES = [
-  { name:'Nihal', owner:'', golfers:['Scottie Scheffler','Matt Fitzpatrick','Aaron Rai','Nicolai Hojgaard','Keegan Bradley','Chris Kirk'] },
+  { name:'Nihal', owner:'', golfers:['Scottie Scheffler','Tommy Fleetwood','Sam Burns','J.J. Spaun','Emiliano Grillo','Padraig Harrington'] },
   { name:'Matt', owner:'', golfers:['Scottie Scheffler','Cameron Young','Matt Fitzpatrick','Ben Kohles','J.B. Holmes','Ryuichi Oiwa'] },
   { name:'Max', owner:'', golfers:['Cameron Young','Xander Schauffele','Tyrrell Hatton','Sam Burns','Ben Griffin','Matthew Jordan'] },
   { name:'Ruble', owner:'', golfers:['Cameron Young','Tommy Fleetwood','Matt Fitzpatrick','Russell Henley','Daniel Berger','Keegan Bradley'] },
